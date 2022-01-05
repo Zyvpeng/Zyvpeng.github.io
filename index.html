@@ -83,21 +83,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="Java-学习问题"><a href="#Java-学习问题" class="headerlink" title="Java 学习问题"></a>Java 学习问题</h1><h2 id="构造器在继承中的访问特点"><a href="#构造器在继承中的访问特点" class="headerlink" title="构造器在继承中的访问特点"></a>构造器在继承中的访问特点</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223134943823.png" alt="image-20211223134943823"></p>
-<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223135229103.png" alt="image-20211223135229103"></p>
+        <h1 id="Java-学习问题"><a href="#Java-学习问题" class="headerlink" title="Java 学习问题"></a>Java 学习问题</h1><h2 id="构造器在继承中的访问特点"><a href="#构造器在继承中的访问特点" class="headerlink" title="构造器在继承中的访问特点"></a>构造器在继承中的访问特点</h2><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223135229103.png" alt="image-20211223135229103"></p>
 <p><strong>注意，一旦在子类构造方法中写了自定义的super，默认的super（）也就消失了</strong></p>
 <p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223140753255.png" alt="image-20211223140753255"></p>
 <h2 id="super内存图"><a href="#super内存图" class="headerlink" title="super内存图"></a>super内存图</h2><p>子类对象有如下的内存空间</p>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223204352029.png" alt="image-20211223204352029"></p>
 <p>所以子类对象同时拥有作为父类对象的属性和方法，也拥有作为子类对象的属性和方法</p>
 <p>方法有重写，属性无重写，所以父子类的重名变量并没有关系</p>
 <h2 id="继承时访问权限问题"><a href="#继承时访问权限问题" class="headerlink" title="继承时访问权限问题"></a>继承时访问权限问题</h2><h3 id="私有方法不能被重写（父类私有成员子类是不能被继承的）"><a href="#私有方法不能被重写（父类私有成员子类是不能被继承的）" class="headerlink" title="- 私有方法不能被重写（父类私有成员子类是不能被继承的）"></a>- 私有方法不能被重写（父类私有成员子类是不能被继承的）</h3><h3 id="子类方法访问权限不能更低"><a href="#子类方法访问权限不能更低" class="headerlink" title="- 子类方法访问权限不能更低"></a>- 子类方法访问权限不能更低</h3><p>public&gt;protected&gt;(default)&gt;private</p>
-<h3 id="Java中类只支持单继承"><a href="#Java中类只支持单继承" class="headerlink" title="- Java中类只支持单继承"></a>- Java中类只支持单继承</h3><h3 id="Java中类支持多重继承"><a href="#Java中类支持多重继承" class="headerlink" title="- Java中类支持多重继承"></a>- Java中类支持多重继承</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223201621028.png" alt="image-20211223201621028"></p>
-<h2 id="继承中变量访问特点"><a href="#继承中变量访问特点" class="headerlink" title="继承中变量访问特点"></a>继承中变量访问特点</h2><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223205503237.png" alt="image-20211223205503237"></p>
-<h2 id="导包操作"><a href="#导包操作" class="headerlink" title="导包操作"></a>导包操作</h2><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211224150103825.png" alt="image-20211224150103825"></p>
-<p>通过导包可以实现跨包操作的功能</p>
-<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><h3 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211224150656709.png" alt="image-20211224150656709"></p>
-<h3 id="状态修饰符"><a href="#状态修饰符" class="headerlink" title="状态修饰符"></a>状态修饰符</h3><h4 id="final"><a href="#final" class="headerlink" title="- final"></a>- final</h4><ul>
+<h3 id="Java中类只支持单继承"><a href="#Java中类只支持单继承" class="headerlink" title="- Java中类只支持单继承"></a>- Java中类只支持单继承</h3><h3 id="Java中类支持多重继承"><a href="#Java中类支持多重继承" class="headerlink" title="- Java中类支持多重继承"></a>- Java中类支持多重继承</h3><h2 id="继承中变量访问特点"><a href="#继承中变量访问特点" class="headerlink" title="继承中变量访问特点"></a>继承中变量访问特点</h2><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211223205503237.png" alt="image-20211223205503237"></p>
+<h2 id="导包操作"><a href="#导包操作" class="headerlink" title="导包操作"></a>导包操作</h2><p>通过导包可以实现跨包操作的功能</p>
+<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><h3 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h3><h3 id="状态修饰符"><a href="#状态修饰符" class="headerlink" title="状态修饰符"></a>状态修饰符</h3><h4 id="final"><a href="#final" class="headerlink" title="- final"></a>- final</h4><ul>
 <li>方法被修饰    不能被重写</li>
 <li>变量被修饰    不能再次赋值</li>
 </ul>
@@ -109,23 +104,16 @@
 <h5 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h5><ul>
 <li> 被类的所有对象共享</li>
 <li>可以通过类名调用(推荐用法)</li>
-<li><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20211224153118511.png" alt="image-20211224153118511"></li>
+<li></li>
 </ul>
 <h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>具体类 抽象类 接口</p>
-<h3 id="访问特点"><a href="#访问特点" class="headerlink" title="访问特点"></a>访问特点</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220101220352366.png" alt="image-20220101220352366"></p>
-<h3 id="好处与弊端"><a href="#好处与弊端" class="headerlink" title="好处与弊端"></a>好处与弊端</h3><h4 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h4><p>提高了程序的拓展性</p>
+<h3 id="访问特点"><a href="#访问特点" class="headerlink" title="访问特点"></a>访问特点</h3><h3 id="好处与弊端"><a href="#好处与弊端" class="headerlink" title="好处与弊端"></a>好处与弊端</h3><h4 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h4><p>提高了程序的拓展性</p>
 <p>​    具体体现：定义方法的时候，使用父类型作为参数，将来在使用的时候，使用具体的子类型参与操作</p>
 <h4 id="弊端"><a href="#弊端" class="headerlink" title="弊端"></a>弊端</h4><p>不能使用子类的特有功能</p>
 <h3 id="多态的转型"><a href="#多态的转型" class="headerlink" title="多态的转型"></a>多态的转型</h3><h4 id="向上转型"><a href="#向上转型" class="headerlink" title="向上转型"></a>向上转型</h4><p>从子到父</p>
 <p>父类引用指向子类对象</p>
 <h4 id="向下转型"><a href="#向下转型" class="headerlink" title="向下转型"></a>向下转型</h4><p>从父到子</p>
 <p>父亲引用转为子类对象</p>
-<h3 id="多态转型内存图"><a href="#多态转型内存图" class="headerlink" title="多态转型内存图"></a>多态转型内存图</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220102092804040.png" alt="image-20220102092804040"></p>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220102092839591.png" alt="image-20220102092839591"></p>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220102092924658.png" alt="image-20220102092924658"></p>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220102092945427.png" alt="image-20220102092945427"></p>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220102093042843.png" alt="image-20220102093042843"></p>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220102093138267.png" alt="image-20220102093138267"></p>
 <h2 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>在Java中，一个没有方法体的方法应该被定义为抽象方法，而类中如果有抽象方法，则该类必须被定义为抽象类</p>
 <h3 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h3><ul>
 <li><p>抽象类和抽象方法必须使用abstract修饰</p>
@@ -198,7 +186,6 @@
 <li>抽象类                    对类抽象，包括属性，行为</li>
 <li>接口              对行为抽象，主要是行为</li>
 </ul>
-<p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220104164547223.png"></p>
 <h2 id="形参和返回值"><a href="#形参和返回值" class="headerlink" title="形参和返回值"></a>形参和返回值</h2><h3 id="类名作为形参和返回值"><a href="#类名作为形参和返回值" class="headerlink" title="类名作为形参和返回值"></a>类名作为形参和返回值</h3><ul>
 <li><p>方法的形参是类名，需要的是该类的对象</p>
 </li>
@@ -246,12 +233,11 @@
 <li>ToString 建议子类重写</li>
 <li>equal 可以重写</li>
 </ul>
-<h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString"></a>toString</h3><h3 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h3><p><img src="C:\Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220105163740992.png" alt="image-20220105163740992"></p>
-
+<h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString"></a>toString</h3><h3 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/05/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/" data-id="cky1f5em90001kwttgi0k4l90" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/01/05/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/" data-id="cky1i93060000kstt29z17xp2" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -302,7 +288,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/05/hello-world/" data-id="cky1f5em20000kwttbtxceoe8" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/01/05/hello-world/" data-id="cky1i930b0001kstt9dl0aymc" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
