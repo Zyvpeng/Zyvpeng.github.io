@@ -16,57 +16,57 @@
 <meta property="og:description" content="Java 学习问题构造器在继承中的访问特点问题 解释 注意，一旦在子类构造方法中写了自定义的super，默认的super（）也就消失了  super内存图子类对象有如下的内存空间  所以子类对象同时拥有作为父类对象的属性和方法，也拥有作为子类对象的属性和方法 方法有重写，属性无重写，所以父子类的重名变量并没有关系 继承时访问权限问题- 私有方法不能被重写（父类私有成员子类是不能被继承的）- 子类方">
 <meta property="og:locale" content="zh_CH">
 <meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223134943823.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223135229103.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223140753255.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223204352029.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223201621028.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223205503237.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224150103825.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224150656709.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224151806193.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224153118511.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220101220352366.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092804040.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092839591.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092924658.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092945427.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102093042843.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102093138267.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220104164547223.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220105163740992.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220106200428908.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220106213258466.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220106213807597.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220107170603889.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108164355653.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108165352226.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108170055460.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108172740862.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223135229103.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223140753255.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223204352029.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223201621028.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223205503237.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224150103825.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224150656709.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224151806193.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224153118511.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220101220352366.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092804040.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092839591.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092924658.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092945427.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102093042843.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102093138267.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220104164547223.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220105163740992.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220106200428908.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220106213258466.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220106213807597.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220107170603889.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108164355653.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108165352226.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108170055460.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108172740862.png">
 <meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Users/19776/AppData/Roaming/Typora/typora-user-images/image-20220108173312955.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108184333864.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109124722002.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109124740820.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109130854068.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109162938326.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109163111602.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109190738687.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109191005029.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109203706563.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110205619984.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115164641532.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220116165518872.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108184333864.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109124722002.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109124740820.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109130854068.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109162938326.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109163111602.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109190738687.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109191005029.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109203706563.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110205619984.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115164641532.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220116165518872.png">
 <meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Users/19776/AppData/Roaming/Typora/typora-user-images/image-20220116165606415.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110213602926.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110214246426.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110215841788.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115142716704.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110213602926.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110214246426.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110215841788.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115142716704.png">
 <meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Users/19776/AppData/Roaming/Typora/typora-user-images/image-20220115144634874.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115152615075.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115152801324.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115154755815.png">
-<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115155014808.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115152615075.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115152801324.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115154755815.png">
+<meta property="og:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115155014808.png">
 <meta property="article:published_time" content="2022-01-16T14:19:58.000Z">
-<meta property="article:modified_time" content="2022-01-16T14:28:36.560Z">
+<meta property="article:modified_time" content="2022-01-16T14:35:51.488Z">
 <meta property="article:author" content="Zyvpeng">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223134943823.png">
@@ -246,24 +246,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Java-学习问题"><a href="#Java-学习问题" class="headerlink" title="Java 学习问题"></a>Java 学习问题</h1><h2 id="构造器在继承中的访问特点"><a href="#构造器在继承中的访问特点" class="headerlink" title="构造器在继承中的访问特点"></a>构造器在继承中的访问特点</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223134943823.png" alt="image-20211223134943823"></p>
-<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223135229103.png" alt="image-20211223135229103"></p>
+<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223135229103.png" alt="image-20211223135229103"></p>
 <p><strong>注意，一旦在子类构造方法中写了自定义的super，默认的super（）也就消失了</strong></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223140753255.png" alt="image-20211223140753255"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223140753255.png" alt="image-20211223140753255"></p>
 <h2 id="super内存图"><a href="#super内存图" class="headerlink" title="super内存图"></a>super内存图</h2><p>子类对象有如下的内存空间</p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223204352029.png" alt="image-20211223204352029"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223204352029.png" alt="image-20211223204352029"></p>
 <p>所以子类对象同时拥有作为父类对象的属性和方法，也拥有作为子类对象的属性和方法</p>
 <p>方法有重写，属性无重写，所以父子类的重名变量并没有关系</p>
 <h2 id="继承时访问权限问题"><a href="#继承时访问权限问题" class="headerlink" title="继承时访问权限问题"></a>继承时访问权限问题</h2><h3 id="私有方法不能被重写（父类私有成员子类是不能被继承的）"><a href="#私有方法不能被重写（父类私有成员子类是不能被继承的）" class="headerlink" title="- 私有方法不能被重写（父类私有成员子类是不能被继承的）"></a>- 私有方法不能被重写（父类私有成员子类是不能被继承的）</h3><h3 id="子类方法访问权限不能更低"><a href="#子类方法访问权限不能更低" class="headerlink" title="- 子类方法访问权限不能更低"></a>- 子类方法访问权限不能更低</h3><p>public&gt;protected&gt;(default)&gt;private</p>
-<h3 id="Java中类只支持单继承"><a href="#Java中类只支持单继承" class="headerlink" title="- Java中类只支持单继承"></a>- Java中类只支持单继承</h3><h3 id="Java中类支持多重继承"><a href="#Java中类支持多重继承" class="headerlink" title="- Java中类支持多重继承"></a>- Java中类支持多重继承</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223201621028.png" alt="image-20211223201621028"></p>
-<h2 id="继承中变量访问特点"><a href="#继承中变量访问特点" class="headerlink" title="继承中变量访问特点"></a>继承中变量访问特点</h2><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211223205503237.png" alt="image-20211223205503237"></p>
-<h2 id="导包操作"><a href="#导包操作" class="headerlink" title="导包操作"></a>导包操作</h2><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224150103825.png" alt="image-20211224150103825"></p>
+<h3 id="Java中类只支持单继承"><a href="#Java中类只支持单继承" class="headerlink" title="- Java中类只支持单继承"></a>- Java中类只支持单继承</h3><h3 id="Java中类支持多重继承"><a href="#Java中类支持多重继承" class="headerlink" title="- Java中类支持多重继承"></a>- Java中类支持多重继承</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223201621028.png" alt="image-20211223201621028"></p>
+<h2 id="继承中变量访问特点"><a href="#继承中变量访问特点" class="headerlink" title="继承中变量访问特点"></a>继承中变量访问特点</h2><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211223205503237.png" alt="image-20211223205503237"></p>
+<h2 id="导包操作"><a href="#导包操作" class="headerlink" title="导包操作"></a>导包操作</h2><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224150103825.png" alt="image-20211224150103825"></p>
 <p>通过导包可以实现跨包操作的功能</p>
-<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><h3 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224150656709.png" alt="image-20211224150656709"></p>
+<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><h3 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224150656709.png" alt="image-20211224150656709"></p>
 <h3 id="状态修饰符"><a href="#状态修饰符" class="headerlink" title="状态修饰符"></a>状态修饰符</h3><h4 id="final"><a href="#final" class="headerlink" title="- final"></a>- final</h4><ul>
 <li>方法被修饰    不能被重写</li>
 <li>变量被修饰    不能再次赋值</li>
 </ul>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224151806193.png" alt="image-20211224151806193"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224151806193.png" alt="image-20211224151806193"></p>
 <ul>
 <li>类被修饰  类不能被继承</li>
 </ul>
@@ -271,10 +271,10 @@
 <h5 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h5><ul>
 <li> 被类的所有对象共享</li>
 <li> 可以通过类名调用(推荐用法)</li>
-<li> <img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20211224153118511.png" alt="image-20211224153118511"></li>
+<li> <img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20211224153118511.png" alt="image-20211224153118511"></li>
 </ul>
 <h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>具体类 抽象类 接口</p>
-<h3 id="访问特点"><a href="#访问特点" class="headerlink" title="访问特点"></a>访问特点</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220101220352366.png" alt="image-20220101220352366"></p>
+<h3 id="访问特点"><a href="#访问特点" class="headerlink" title="访问特点"></a>访问特点</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220101220352366.png" alt="image-20220101220352366"></p>
 <h3 id="好处与弊端"><a href="#好处与弊端" class="headerlink" title="好处与弊端"></a>好处与弊端</h3><h4 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h4><p>提高了程序的拓展性</p>
 <p>​    具体体现：定义方法的时候，使用父类型作为参数，将来在使用的时候，使用具体的子类型参与操作</p>
 <h4 id="弊端"><a href="#弊端" class="headerlink" title="弊端"></a>弊端</h4><p>不能使用子类的特有功能</p>
@@ -282,12 +282,12 @@
 <p>父类引用指向子类对象</p>
 <h4 id="向下转型"><a href="#向下转型" class="headerlink" title="向下转型"></a>向下转型</h4><p>从父到子</p>
 <p>父亲引用转为子类对象</p>
-<h3 id="多态转型内存图"><a href="#多态转型内存图" class="headerlink" title="多态转型内存图"></a>多态转型内存图</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092804040.png" alt="image-20220102092804040"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092839591.png" alt="image-20220102092839591"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092924658.png" alt="image-20220102092924658"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102092945427.png" alt="image-20220102092945427"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102093042843.png" alt="image-20220102093042843"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220102093138267.png" alt="image-20220102093138267"></p>
+<h3 id="多态转型内存图"><a href="#多态转型内存图" class="headerlink" title="多态转型内存图"></a>多态转型内存图</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092804040.png" alt="image-20220102092804040"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092839591.png" alt="image-20220102092839591"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092924658.png" alt="image-20220102092924658"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102092945427.png" alt="image-20220102092945427"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102093042843.png" alt="image-20220102093042843"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220102093138267.png" alt="image-20220102093138267"></p>
 <h2 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>在Java中，一个没有方法体的方法应该被定义为抽象方法，而类中如果有抽象方法，则该类必须被定义为抽象类</p>
 <h3 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h3><ul>
 <li><p>抽象类和抽象方法必须使用abstract修饰</p>
@@ -360,7 +360,7 @@
 <li>抽象类                    对类抽象，包括属性，行为</li>
 <li>接口              对行为抽象，主要是行为</li>
 </ul>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220104164547223.png"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220104164547223.png"></p>
 <h2 id="形参和返回值"><a href="#形参和返回值" class="headerlink" title="形参和返回值"></a>形参和返回值</h2><h3 id="类名作为形参和返回值"><a href="#类名作为形参和返回值" class="headerlink" title="类名作为形参和返回值"></a>类名作为形参和返回值</h3><ul>
 <li><p>方法的形参是类名，需要的是该类的对象</p>
 </li>
@@ -408,10 +408,10 @@
 <li>ToString 建议子类重写</li>
 <li>equal 可以重写</li>
 </ul>
-<h3 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h3><h4 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString"></a>toString</h4><h4 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220105163740992.png" alt="image-20220105163740992"></p>
+<h3 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h3><h4 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString"></a>toString</h4><h4 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220105163740992.png" alt="image-20220105163740992"></p>
 <h3 id="基本类型包装类"><a href="#基本类型包装类" class="headerlink" title="基本类型包装类"></a>基本类型包装类</h3><h4 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h4><p>将基本数据类型封装成对象的好处在于可以在对象中定义更多的功能方法操作该数据</p>
 <p>常用的操作之一：用于基本数据类型与字符串之间的转换</p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220106200428908.png" alt="image-20220106200428908"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220106200428908.png" alt="image-20220106200428908"></p>
 <h4 id="典例：Integer"><a href="#典例：Integer" class="headerlink" title="典例：Integer"></a>典例：Integer</h4><p>本数据类型与字符串之间的转换</p>
 <h5 id="构造方法-1"><a href="#构造方法-1" class="headerlink" title="构造方法"></a>构造方法</h5><ul>
 <li><p>过时方法   </p>
@@ -430,8 +430,8 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Demo04;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IntegerDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 手动装箱</span></span><br><span class="line">        Integer i=Integer.valueOf(<span class="number">100</span>);</span><br><span class="line">        <span class="comment">//自动装箱</span></span><br><span class="line">        Integer i1=<span class="number">100</span>;</span><br><span class="line">        <span class="comment">//手动拆箱</span></span><br><span class="line">        i1=i1.intValue()+<span class="number">200</span>;</span><br><span class="line">        <span class="comment">//自动拆箱</span></span><br><span class="line">        i1+=<span class="number">100</span>;</span><br><span class="line">        System.out.println(i1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h3 id="Date类"><a href="#Date类" class="headerlink" title="Date类"></a>Date类</h3><h4 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h4><p>Date类对象代表了一个特定的时间，精确到毫秒</p>
-<h4 id="构造方法-2"><a href="#构造方法-2" class="headerlink" title="构造方法"></a>构造方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220106213258466.png" alt="image-20220106213258466"></p>
-<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220106213807597.png" alt="image-20220106213807597"></p>
+<h4 id="构造方法-2"><a href="#构造方法-2" class="headerlink" title="构造方法"></a>构造方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220106213258466.png" alt="image-20220106213258466"></p>
+<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220106213807597.png" alt="image-20220106213807597"></p>
 <h3 id="SimpleDateFormat类"><a href="#SimpleDateFormat类" class="headerlink" title="SimpleDateFormat类"></a>SimpleDateFormat类</h3><p>pattern</p>
 <ul>
 <li>y      年</li>
@@ -442,8 +442,8 @@
 <li>s     秒</li>
 </ul>
 <h3 id="Calendar"><a href="#Calendar" class="headerlink" title="Calendar"></a>Calendar</h3><h4 id="概述-4"><a href="#概述-4" class="headerlink" title="概述"></a>概述</h4><p>Calendar类为某一时刻和一组日历字段之间的转换提供了一些方法，并为操作日历字段提供了一些方法</p>
-<h4 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="常用方法"></a>常用方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220107170603889.png" alt="image-20220107170603889"></p>
-<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><h3 id="概述-5"><a href="#概述-5" class="headerlink" title="概述"></a>概述</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108164355653.png" alt="image-20220108164355653"></p>
+<h4 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="常用方法"></a>常用方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220107170603889.png" alt="image-20220107170603889"></p>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><h3 id="概述-5"><a href="#概述-5" class="headerlink" title="概述"></a>概述</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108164355653.png" alt="image-20220108164355653"></p>
 <ul>
 <li>Error：严重问题，不需要处理</li>
 <li>Exception 异常类，他表示程序本身可以处理的问题<ul>
@@ -461,24 +461,24 @@
 <li>try  catch</li>
 <li>throws</li>
 </ul>
-<h4 id="TryCatch"><a href="#TryCatch" class="headerlink" title="TryCatch"></a>TryCatch</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108165352226.png" alt="image-20220108165352226"></p>
-<h5 id="Throwable-的成员方法"><a href="#Throwable-的成员方法" class="headerlink" title="Throwable 的成员方法"></a>Throwable 的成员方法</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108170055460.png" alt="image-20220108170055460"></p>
+<h4 id="TryCatch"><a href="#TryCatch" class="headerlink" title="TryCatch"></a>TryCatch</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108165352226.png" alt="image-20220108165352226"></p>
+<h5 id="Throwable-的成员方法"><a href="#Throwable-的成员方法" class="headerlink" title="Throwable 的成员方法"></a>Throwable 的成员方法</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108170055460.png" alt="image-20220108170055460"></p>
 <h5 id="编译异常和运行异常的区别"><a href="#编译异常和运行异常的区别" class="headerlink" title="编译异常和运行异常的区别"></a>编译异常和运行异常的区别</h5><ul>
 <li><p>编译时异常：必须显示处理，否则程序就无法通过编译，所以也叫做受检异常</p>
 </li>
 <li><p>运行时异常：无需显示处理，也可以和编译异常一样处理，所以也叫做非受检异常</p>
 </li>
 </ul>
-<h4 id="throws"><a href="#throws" class="headerlink" title="throws"></a>throws</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108172740862.png" alt="image-20220108172740862"></p>
+<h4 id="throws"><a href="#throws" class="headerlink" title="throws"></a>throws</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108172740862.png" alt="image-20220108172740862"></p>
 <p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220108173312955.png" alt="image-20220108173312955"></p>
-<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220108184333864.png" alt="image-20220108184333864"></p>
+<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220108184333864.png" alt="image-20220108184333864"></p>
 <h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><ul>
 <li>特点：一种存储空间可变的存储模型，存储的数据容量可以随时发生改变</li>
 <li>集合类体系结构</li>
 </ul>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109124722002.png" alt="image-20220109124722002"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109124740820.png" alt="image-20220109124740820"></p>
-<h3 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h3><h4 id="常用方法-2"><a href="#常用方法-2" class="headerlink" title="常用方法"></a>常用方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109130854068.png" alt="image-20220109130854068"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109124722002.png" alt="image-20220109124722002"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109124740820.png" alt="image-20220109124740820"></p>
+<h3 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h3><h4 id="常用方法-2"><a href="#常用方法-2" class="headerlink" title="常用方法"></a>常用方法</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109130854068.png" alt="image-20220109130854068"></p>
 <h4 id="Collection集合的遍历"><a href="#Collection集合的遍历" class="headerlink" title="Collection集合的遍历"></a>Collection集合的遍历</h4><h5 id="Iterator"><a href="#Iterator" class="headerlink" title="Iterator"></a>Iterator</h5><ul>
 <li><p>Iterator<E> iterator(): 返回集合中元素的迭代器，通过集合的iterator（）方法得到</E></p>
 </li>
@@ -491,14 +491,14 @@
 </ul>
 </li>
 </ul>
-<h4 id="集合的使用步骤"><a href="#集合的使用步骤" class="headerlink" title="集合的使用步骤"></a>集合的使用步骤</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109162938326.png" alt="image-20220109162938326"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109163111602.png" alt="image-20220109163111602"></p>
+<h4 id="集合的使用步骤"><a href="#集合的使用步骤" class="headerlink" title="集合的使用步骤"></a>集合的使用步骤</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109162938326.png" alt="image-20220109162938326"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109163111602.png" alt="image-20220109163111602"></p>
 <h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><ul>
 <li>特点  是有序集合，用户可以精确的控制列表中每个元素的插入位置，用户可以通过整数索引访问元素并搜索列表中的元素</li>
 <li>与set集合不同，列表允许重复元素</li>
 </ul>
-<h5 id="特有方法"><a href="#特有方法" class="headerlink" title="特有方法"></a>特有方法</h5><h5 id="并发修改异常"><a href="#并发修改异常" class="headerlink" title="并发修改异常"></a>并发修改异常</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109190738687.png" alt="image-20220109190738687"></p>
-<h5 id="listlterator"><a href="#listlterator" class="headerlink" title="listlterator"></a>listlterator</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109191005029.png" alt="image-20220109191005029"></p>
+<h5 id="特有方法"><a href="#特有方法" class="headerlink" title="特有方法"></a>特有方法</h5><h5 id="并发修改异常"><a href="#并发修改异常" class="headerlink" title="并发修改异常"></a>并发修改异常</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109190738687.png" alt="image-20220109190738687"></p>
+<h5 id="listlterator"><a href="#listlterator" class="headerlink" title="listlterator"></a>listlterator</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109191005029.png" alt="image-20220109191005029"></p>
 <h5 id="增强for循环"><a href="#增强for循环" class="headerlink" title="增强for循环"></a>增强for循环</h5><ul>
 <li>目的   简化数组和collection的遍历</li>
 </ul>
@@ -506,7 +506,7 @@
 <li>arrayList            底层代码是数组</li>
 <li>LinkedList         底层代码是链表</li>
 </ul>
-<h5 id="Linkedlist的特有功能"><a href="#Linkedlist的特有功能" class="headerlink" title="Linkedlist的特有功能"></a>Linkedlist的特有功能</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220109203706563.png" alt="image-20220109203706563"></p>
+<h5 id="Linkedlist的特有功能"><a href="#Linkedlist的特有功能" class="headerlink" title="Linkedlist的特有功能"></a>Linkedlist的特有功能</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220109203706563.png" alt="image-20220109203706563"></p>
 <h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><h4 id="hash值"><a href="#hash值" class="headerlink" title="hash值"></a>hash值</h4><p>哈希值是JDK根据对象的地址或者字符串或者数字算出来的int类型的数值</p>
 <p>Object类中有一个方法可以获得对象的哈希值</p>
 <ul>
@@ -519,7 +519,7 @@
 <li>不能包含重复元素</li>
 </ul>
 <h4 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h4><p>hash表通过数组和链表的结合实现</p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110205619984.png" alt="image-20220110205619984"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110205619984.png" alt="image-20220110205619984"></p>
 <p>判断顺序</p>
 <ul>
 <li>取余后的值</li>
@@ -540,8 +540,8 @@
 <li>自然排序 comparable</li>
 <li>比较器排序 comparator</li>
 </ul>
-<h4 id="自然排序Comparable"><a href="#自然排序Comparable" class="headerlink" title="自然排序Comparable"></a>自然排序Comparable</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115164641532.png" alt="image-20220115164641532"></p>
-<h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><h4 id="概述-6"><a href="#概述-6" class="headerlink" title="概述"></a>概述</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220116165518872.png" alt="image-20220116165518872"></p>
+<h4 id="自然排序Comparable"><a href="#自然排序Comparable" class="headerlink" title="自然排序Comparable"></a>自然排序Comparable</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115164641532.png" alt="image-20220115164641532"></p>
+<h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><h4 id="概述-6"><a href="#概述-6" class="headerlink" title="概述"></a>概述</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220116165518872.png" alt="image-20220116165518872"></p>
 <p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220116165606415.png" alt="image-20220116165606415"></p>
 <h4 id="泛型类"><a href="#泛型类" class="headerlink" title="泛型类"></a>泛型类</h4><h5 id="定义格式"><a href="#定义格式" class="headerlink" title="定义格式"></a>定义格式</h5><ul>
 <li><p>格式：修饰符 class 类名 &lt;类型&gt;</p>
@@ -555,13 +555,13 @@
 <li>文件和目录是可以通过Fiel封装成对象的</li>
 <li>对于File而言，它封装的并不是一个真正存在的文件，仅仅是一个路径名而已，将来是要通过具体操作把这个路径的内容转换为具体存在的</li>
 </ul>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110213602926.png" alt="image-20220110213602926"></p>
-<h4 id="创建功能"><a href="#创建功能" class="headerlink" title="创建功能"></a>创建功能</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110214246426.png" alt="image-20220110214246426"></p>
-<h4 id="判断功能"><a href="#判断功能" class="headerlink" title="判断功能"></a>判断功能</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220110215841788.png" alt="image-20220110215841788"></p>
-<h4 id="删除功能"><a href="#删除功能" class="headerlink" title="删除功能"></a>删除功能</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115142716704.png" alt="image-20220115142716704"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110213602926.png" alt="image-20220110213602926"></p>
+<h4 id="创建功能"><a href="#创建功能" class="headerlink" title="创建功能"></a>创建功能</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110214246426.png" alt="image-20220110214246426"></p>
+<h4 id="判断功能"><a href="#判断功能" class="headerlink" title="判断功能"></a>判断功能</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220110215841788.png" alt="image-20220110215841788"></p>
+<h4 id="删除功能"><a href="#删除功能" class="headerlink" title="删除功能"></a>删除功能</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115142716704.png" alt="image-20220115142716704"></p>
 <p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Users\19776\AppData\Roaming\Typora\typora-user-images\image-20220115144634874.png" alt="image-20220115144634874"></p>
-<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><h4 id="IO流概述"><a href="#IO流概述" class="headerlink" title="IO流概述"></a>IO流概述</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115152615075.png" alt="image-20220115152615075"></p>
-<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115152801324.png" alt="image-20220115152801324"></p>
+<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><h4 id="IO流概述"><a href="#IO流概述" class="headerlink" title="IO流概述"></a>IO流概述</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115152615075.png" alt="image-20220115152615075"></p>
+<p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115152801324.png" alt="image-20220115152801324"></p>
 <p>区分字符流和字节流：用记事本打开，读得懂就用字符流，否则就使用字节流</p>
 <p>字节流抽象类</p>
 <ul>
@@ -569,8 +569,8 @@
 <li>OutputuStream 这个类是表示字节输出流的所有类的超类</li>
 <li>子类名称特点：以父类名作为子类名称的后缀</li>
 </ul>
-<h4 id="字节流写数据"><a href="#字节流写数据" class="headerlink" title="字节流写数据"></a>字节流写数据</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115154755815.png" alt="image-20220115154755815"></p>
-<h5 id="写数据的三种方式"><a href="#写数据的三种方式" class="headerlink" title="写数据的三种方式"></a>写数据的三种方式</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%5Cimage-20220115155014808.png" alt="image-20220115155014808"></p>
+<h4 id="字节流写数据"><a href="#字节流写数据" class="headerlink" title="字节流写数据"></a>字节流写数据</h4><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115154755815.png" alt="image-20220115154755815"></p>
+<h5 id="写数据的三种方式"><a href="#写数据的三种方式" class="headerlink" title="写数据的三种方式"></a>写数据的三种方式</h5><p><img src="/2022/01/16/Java%20%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/image-20220115155014808.png" alt="image-20220115155014808"></p>
 <h5 id="字节流写数据的两个问题"><a href="#字节流写数据的两个问题" class="headerlink" title="字节流写数据的两个问题"></a>字节流写数据的两个问题</h5><ul>
 <li>如何换行</li>
 <li>追加写入</li>
@@ -671,8 +671,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2022/01/16/Java%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java笔记</div>
+    <a href="/2022/01/06/LeetCode%E5%88%B7%E9%A2%98%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode刷题记</div>
       <i class="icon-circle-right"></i>
     </a>
   
