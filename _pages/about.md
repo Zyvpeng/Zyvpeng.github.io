@@ -27,7 +27,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/flowaudiosynth.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV 2024</div><img src='images/flowaudiosynth.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Flow-Audio-Synth:A Video-to-Audio Model which Captures Dynamic Features](https://flow-audio-synth.github.io/Flow-Audio-Synth/)
@@ -50,10 +50,8 @@ My research interest includes neural machine translation and computer vision. I 
 
 
 # 📖 Educations
-- *2021.09 - 2024.07 (now)*, Undergraduate, School of Computer Science and Technology, Xidian Univeristy, Xi'an
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
+- *2021.09 - 2024.07 (now)*, Undergraduate, School of Computer Science and Technology, Xidian Univeristy, Xi'an.
+
 
 # 💻 Internships
 - *2022.08 - 2022.12*, [The Hong Kong Polytechnic University, Edge Intelligence Lab](https://polyu-test.netlify.app/), Research Assistant, Hong Kong.
