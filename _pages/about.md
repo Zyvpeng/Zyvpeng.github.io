@@ -40,7 +40,7 @@ My research interest includes neural machine translation and computer vision. I 
 </div>
 </div>
 
-- [Our code is here](https://github.com/luzixiang2019/video2audio) **PRCV 2024**
+- [Flow-Audio-Synth:A Video-to-Audio Model which Captures Dynamic Features](https://github.com/luzixiang2019/video2audio) **PRCV 2024**
 
 # 🎖 Honors and Awards
 - *2023.12* National Scholarship (Top 1%).
